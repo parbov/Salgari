@@ -35,7 +35,7 @@ namespace SalgariSite.Admin
 
         protected void btnSave_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtTitle.Text))
+            if (!string.IsNullOrEmpty(txtTitle.Text) && !string.IsNullOrEmpty(txtCover.Text))
             {
                 var filmStatus = ActionType.Modified;
 
@@ -77,8 +77,9 @@ namespace SalgariSite.Admin
             }
             else
             {
-                ErrorSuccessNotifier.AddErrorMessage("Film Name is required!");
+                ErrorSuccessNotifier.AddErrorMessage("Film Name or Cover is required!");
             }
+            
         }
 
         protected void btnCancel_Click(object sender, EventArgs e)
@@ -142,7 +143,7 @@ namespace SalgariSite.Admin
             lblFilmHeader.InnerText = "Edit Film";
             txtTitle.Text = Server.HtmlDecode(grdFilms.Rows[e.NewEditIndex].Cells[0].Text);
             txtCover.Text = Server.HtmlDecode(grdFilms.Rows[e.NewEditIndex].Cells[1].Text);
-            if (Server.HtmlDecode(grdFilms.Rows[e.NewEditIndex].Cells[2].Text) != null) { 
+            /*if (Server.HtmlDecode(grdFilms.Rows[e.NewEditIndex].Cells[2].Text) != null) { 
             txtImg1.Text = Server.HtmlDecode(grdFilms.Rows[e.NewEditIndex].Cells[2].Text);
             }
             if (Server.HtmlDecode(grdFilms.Rows[e.NewEditIndex].Cells[3].Text) != null) { 
@@ -153,7 +154,7 @@ namespace SalgariSite.Admin
             }
             if (Server.HtmlDecode(grdFilms.Rows[e.NewEditIndex].Cells[5].Text) != null) { 
             txtDescription.Text = Server.HtmlDecode(grdFilms.Rows[e.NewEditIndex].Cells[5].Text);
-            }
+            }*/
             btnSave.Text = "Save";
             btnSave.CommandArgument = grdFilms.DataKeys[e.NewEditIndex].Value.ToString();
         }

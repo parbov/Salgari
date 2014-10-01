@@ -6,7 +6,7 @@
             <header>
                 <h1>Book Details</h1>
                 <p class="book-title"><%#: Item.Title %></p>
-                <p class="book-engTitle"><i>by <%#: Item.EngTitle %></i></p>
+                <p class="book-engTitle"><i>English Title <%#: Item.EngTitle %></i></p>
                 <p class="book-year">
                     <i>Year <%#: Item.Year %></i>
                 </p>

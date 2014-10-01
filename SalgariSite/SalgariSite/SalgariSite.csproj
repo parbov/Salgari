@@ -165,6 +165,9 @@
     <Content Include="Films.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="images\banner_salgari.gif" />
+    <Content Include="images\Cabiria.gif" />
+    <Content Include="images\corsaro_nero_palermo.gif" />
+    <Content Include="images\emilio_salgari_documentary.gif" />
     <Content Include="images\Emilio_Salgari_ritratto.jpg" />
     <Content Include="images\pirdelmal.jpg" />
     <Content Include="images\tigOfMom.jpg" />

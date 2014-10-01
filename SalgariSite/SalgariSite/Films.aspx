@@ -11,10 +11,11 @@
 
     <asp:Repeater ID="FilmsRepeater" runat="server"  ItemType="SalgariSite.Models.Film">
                     <ItemTemplate> 
-                        <li><%#: Item.Title %></li>
-                       <div> <asp:Image runat="server" ImageUrl="<%# Item.Cover %>" /></div>
+                        <li id="filmName"><%#: Item.Title %></li>
+                       <div id="FilmCover" > <asp:Image  runat="server" ImageUrl="<%# Item.Cover %>" /></div>
                         <div><%#: Item.Description %></div>
                         <p><asp:Image runat="server" ImageUrl="<%# Item.Img1 %>" /><asp:Image runat="server" ImageUrl="<%# Item.Img2 %>" /><asp:Image runat="server" ImageUrl="<%# Item.Img3 %>" /></p>
+                        <div class="clearfix"></div>
                     </ItemTemplate>
                 </asp:Repeater>
                 <asp:Label runat="server" ID="lblNoRecords" Visible="False"><i>No books in this category.</i></asp:Label>

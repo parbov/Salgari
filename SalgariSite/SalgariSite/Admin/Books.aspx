@@ -35,22 +35,24 @@
                 <asp:Label runat="server" Text="English Title:"></asp:Label>
                 <asp:TextBox ID="txtEngTitle" runat="server" placeholder="Enter book english title ..." MaxLength="256"></asp:TextBox>
             </label>
-
+            <p>
             <label>
                 <asp:Label runat="server" Text="Year:"></asp:Label>
                 <asp:TextBox ID="txtYear" runat="server" placeholder="Enter book year ..." MaxLength="256"></asp:TextBox>
             </label>
-
+</p>
+            <p>
             <label>
                 <asp:Label runat="server" Text="Cover Image:"></asp:Label>
                 <asp:TextBox ID="txtCover" runat="server" placeholder="Enter book cover image ..." MaxLength="256"></asp:TextBox>
             </label>
-
+            </p>
+            <p>
             <label>
                 <asp:Label runat="server" Text="Description:"></asp:Label>
                 <asp:TextBox ID="txtDescription" runat="server" TextMode="MultiLine" placeholder="Enter book description ..." Height="160"></asp:TextBox>
             </label>
-
+            </p>
             <label>
                 <asp:Label runat="server" Text="Category:"></asp:Label>
                 <asp:DropDownList ID="ddlCategory" runat="server" SelectMethod="SelectCategories" DataTextField="Name" DataValueField="Id"></asp:DropDownList>
